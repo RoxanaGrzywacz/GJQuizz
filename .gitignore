@@ -1,0 +1,19 @@
+# Ignoruj node_modules w client
+/client/node_modules/
+
+# Ignoruj dist (vite build)
+client/dist/
+
+# server (na przyszłość)
+/server/node_modules/
+server/dist/
+
+# Ignoruj logi
+*.log
+
+# Ignoruj środowiskowe
+.env
+
+# Śmieci systemowe
+.DS_Store
+Thumbs.db

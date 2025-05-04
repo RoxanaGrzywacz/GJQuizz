@@ -1,0 +1,69 @@
+/* 1. Box-sizing: border-box dla WSZYSTKIEGO */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Reset marginesów, paddingów, fontu */
+html, body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding:0;
+    height: 100%;
+}
+
+/* 3. Body - layout flex */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+
+/* 4. Linki bez podkreśleń */
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+/* 5. Listy bez kropek */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 6. Obrazki responsywne */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 7. Przyciski reset */
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #20053d, #034dcc);
+}
+
+.app-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 8. Responsywność (przykład) */
+@media (max-width: 768px) {
+    body {
+      font-size: 90%;
+    }
+  }

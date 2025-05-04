@@ -1,0 +1,55 @@
+.register {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    gap:20px;
+
+}
+
+.register-input {
+    display: flex;
+    height: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 1px solid #250c80;
+    background: #b9bdf0;
+    
+}
+
+.register-button {
+    font-weight: bold;
+    color: white;
+    height: 3rem;
+    border: 1px solid #250c80;
+    border-radius: 2rem;
+    background: #250c80;
+    transition: transform 0.3s ease;
+}
+
+.register-button:hover{
+    transform:scale(1.10);
+}
+
+@media (max-width: 768px) {
+
+    .register{
+        padding:2rem;
+    }
+
+}
+input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 1000px #b9bdf0 inset !important;
+    color: #a8a8a8 !important;
+}
+
+input:-webkit-autofill::first-line {
+    color: #a8a8a8;
+}

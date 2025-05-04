@@ -1,0 +1,52 @@
+.home {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    height:100%;
+    padding: 1rem;
+    
+}
+.store-links{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+    padding:10px;
+    text-align: center;
+}
+
+.store-icon{
+    padding:10px;
+    width: 70px;
+    height: auto;
+}
+
+.store-icon:hover{
+    color: #034dcc;
+}
+
+.qr-codes{
+    display: flex;
+    gap: 40px;
+    padding: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .qr-codes {
+        display: none;
+      }
+
+      .store-links {
+        gap: 20px;
+        padding: 10px 0;
+      }
+}

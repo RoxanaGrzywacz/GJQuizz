@@ -33,6 +33,8 @@
     transition: transform 0.3s ease;
 }
 
+
+
 .register-button:hover{
     transform:scale(1.10);
 }

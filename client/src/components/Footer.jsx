@@ -5,7 +5,7 @@ function Footer() {
 
     return (
     <footer className="footer">
-        <p>&copy; 2025 GJQuizz</p>
+        <p>&copy; 2025 GJQuizz by Roxana</p>
     </footer>
     );
 };
